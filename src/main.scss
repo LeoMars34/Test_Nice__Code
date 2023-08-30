@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'SF-Pro-Display-Medium';
+    src: local('SF-Pro-Display-Medium'),
+        url('./fonts/SF-Pro-Display-Medium.ttf') format('truetype');
+    font-weight: bold;
+}
+.main {
+    font-family: 'SF-Pro-Display-Medium';
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 1140px;
+        height: 940px;
+        .sideBar {
+            display: flex;
+            flex-direction: column;
+            height: 920px;
+            width: 374px;
+
+            .search {
+                width: 366px;
+                height: 60px;
+                display: flex;
+
+                input {
+                    border: none;
+                    height: 30px;
+                    width: 272px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                }
+                .imgSearch {
+                    position: relative;
+                    left: 0px;
+                }
+            }
+            .choose {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 28px;
+                    height: 18px;
+                }
+                button {
+                    border: none;
+                    cursor: pointer;
+                }
+                .none {
+                    display: none;
+                }
+            }
+            .list {
+                width: 390px;
+                height: 840px;
+                position: relative;
+                left: -50px;
+
+                ul {
+                    list-style: none;
+                    width: 390px;
+
+                    li {
+                        height: 60px;
+                        margin: 10px;
+                        box-shadow: 0 0 10px rgb(187, 187, 187);
+                        border-radius: 5px;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .page {
+            position: absolute;
+            top: 0;
+            width: 744px;
+            height: 110px;
+            right: 450px;
+            margin-top: 50px;
+
+            img {
+                width: 90px;
+                height: 90px;
+            }
+            .infoPerson {
+                position: absolute;
+                top: 0;
+                left: 100px;
+                p {
+                    font-size: small;
+                    position: relative;
+                    bottom: 15px;
+                }
+            }
+            .pageBtn {
+                margin-top: 20px;
+                width: 744px;
+                height: 26px;
+                position: relative;
+                left: -20px;
+                button {
+                    margin: 10px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .someBtn {
+                    position: absolute;
+                    top: 0;
+                    right: 0px;
+
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        position: relative;
+                        top: 5px;
+                    }
+                }
+            }
+            .notes {
+                width: 744px;
+                height: 784px;
+                p {
+                    margin-top: 30px;
+                    span {
+                        color: rgb(79, 79, 248);
+                    }
+                }
+            }
+            .consultations {
+                width: 744px;
+                height: 784px;
+                ul {
+                    list-style: none;
+                    margin-top: 35px;
+                    position: relative;
+                    left: -50px;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        width: 724px;
+                        height: 66px;
+                        box-shadow: 0 0 10px rgb(187, 187, 187);
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin-left: 15px;
+                        }
+
+                        p {
+                            margin-left: 15px;
+
+                            span {
+                                color: rgb(131, 131, 131);
+                                font-size: 14px;
+                            }
+                            .spaceBetween {
+                                width: 630px;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .red {
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .video {
+                width: 744px;
+                height: 784px;
+                ul {
+                    list-style: none;
+                    margin-top: 35px;
+                    position: relative;
+                    left: -50px;
+
+                    li {
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        width: 724px;
+                        height: 66px;
+                        box-shadow: 0 0 10px rgb(187, 187, 187);
+
+                        img {
+                            width: 82px;
+                            height: 46px;
+                            margin-left: 15px;
+                        }
+
+                        p {
+                            margin-left: 15px;
+
+                            div {
+                                color: rgb(131, 131, 131);
+                                padding-top: 10px;
+                                font-size: 14px;
+                            }
+                            .spaceBetween {
+                                width: 600px;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                }
+            }
+            .events {
+                width: 744px;
+                height: 784px;
+
+                ul {
+                    list-style: none;
+                    margin-top: 35px;
+                    position: relative;
+                    left: -50px;
+
+                    li {
+                        margin-top: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        width: 724px;
+                        height: 66px;
+                        box-shadow: 0 0 10px rgb(187, 187, 187);
+                        img {
+                            width: 82px;
+                            height: 46px;
+                            margin-left: 15px;
+                        }
+                        .eventsDiv {
+                            position: relative;
+                            margin-left: 10px;
+
+                            .eventsDivLogo {
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                bottom: 10px;
+                                left: -10px;
+
+                                span {
+                                    margin: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
